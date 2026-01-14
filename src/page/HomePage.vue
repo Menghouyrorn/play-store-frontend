@@ -1,7 +1,13 @@
 <template>
-  <div>Home Page</div>
+  <div>
+    <div>
+      <SliderCard/>
+    </div>
+  </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import SliderCard from '@/components/SliderCard.vue';
+</script>
 
 <style></style>
