@@ -48,7 +48,7 @@ interface DataType {
 }
 
 let isSlider = ref<number>(1);
-
+let timeOut =ref(0);
 const data_slide = [
   {
     id: 1,
@@ -56,7 +56,7 @@ const data_slide = [
   },
   {
     id: 2,
-    img: "https://www.asus.com/media/Odin/Websites/global/ProductLine/20240122024213.png",
+    img: "https://png.pngtree.com/png-vector/20241018/ourmid/pngtree-running-shoes-or-sneakers-on-a-transparent-background-png-image_14112954.png",
   },
   {
     id: 3,
@@ -66,9 +66,8 @@ const data_slide = [
 
 function onSlider(id: number) {
   isSlider.value = id;
+  clearInterval(timeOut.value);
 }
-
-let timeOut =ref(0);
 
 function onStart(){
   timeOut.value = setInterval(()=>{

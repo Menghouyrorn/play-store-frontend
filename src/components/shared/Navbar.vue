@@ -29,7 +29,9 @@
     <div
       class="h-[8vh] shadow-xs items-center flex justify-between px-2 w-full"
     >
-      <p class="text-gray-500 font-extrabold uppercase flex items-center text-sm gap-x-1"><Archive :size="18"/>PlayStore Web</p>
+      <p class="text-gray-500 font-extrabold uppercase flex items-center text-sm gap-x-1">
+        
+       <img src="/play_logo.jpg" width="35" class=" rounded-sm"/> PlayTech Store</p>
       <div class="flex items-center w-1/2">
         <Select>
           <SelectTrigger size="sm" class="rounded-sm rounded-r-none cursor-pointer min-w-48 focus-visible:ring-0">
